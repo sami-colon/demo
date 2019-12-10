@@ -1,0 +1,93 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url(../images/body-main.jpg);
+	background-repeat: repeat;
+}
+#main-content{
+	background: url(../images/diary-main.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 1000px;
+	height: 800px;
+	position: relative;
+}
+#side-menu{
+	width: 280px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+#page-content{
+	position: absolute;
+	top: 20px;
+	left: 300px;
+	width: 680px;
+	height: 750px;
+	overflow-y: hidden;
+}
+ul{
+	list-style: none;
+}
+.menu{
+	text-decoration: none;
+	color: white;
+	background-color: #29CAEC;
+	display: block;
+	height: 40px;
+	text-align: center;
+	opacity: 0.85;
+	margin: 3.5px;
+	box-shadow: 0 0 10px black;
+	font-size: 150%;
+}
+.menu:hover{
+	opacity: 1;
+	color: black;
+	font-size: 180%;
+	font-weight: normal;
+}
+.selected{
+	color: black;
+}
+.item-1{
+	background-color: #29CAEC;
+}
+.item-2{
+	background-color: #A0DD2A;
+}
+.item-3{
+	background-color: #ECD329;
+}
+.item-4{
+	background-color: #DD5D1D;
+}
+.item-5{
+	background-color: #ED3ACD;
+}
+#home{
+	height: 745px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+#our-work{
+	height: 745px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+img{
+	background-size: cover;
+	width: 100%;
+}
+.diary-notes{
+  /*transform: translateY(-10px) rotate(-5deg); */
+  box-shadow: 0 0 10px 8px gray;
+  background-color: #EAE7DC;
+  border-radius: 12px;
+  height: 800px;
+}
+#display-cards div.card{
+	height: 450px;
+}
