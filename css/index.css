@@ -7,13 +7,25 @@ body{
 	background-repeat: repeat;
 }
 #main-content{
-	background: url(../images/diary-main.jpg);
+	background: linear-gradient(rgba(19,107,47,0.5), rgba(19,107,47,0.5)), url(../images/diary-main.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 1000px;
 	height: 800px;
 	position: relative;
 }
+/*.background-tint{
+  background-color: rgba(19,107,47,0.5);
+  background-blend-mode: multiply;
+}
+.fake-tint{
+	background:
+    linear-gradient(
+      rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45)
+    ),
+    url(../images/diary-main.jpg);
+}*/
 #side-menu{
 	width: 280px;
 	position: absolute;
@@ -67,14 +79,24 @@ ul{
 .item-5{
 	background-color: #ED3ACD;
 }
+.item-6{
+	background-color: #EAE7DC;
+}
+.item-7{
+	background-color: #DC3545;
+}
 #home{
-	height: 745px;
+	height: 750px;
 	overflow-y: hidden;
 	overflow-x: hidden;
+	background-color: #FAF6F3;
 }
-#our-work{
-	height: 745px;
-	overflow-y: scroll;
+#our-work, #why, #thanks, #contribute, #our-team, #stories{
+	height: 750px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background-color: #FAF6F3;
+	overflow-y: auto;
 	overflow-x: hidden;
 }
 img{
@@ -84,10 +106,28 @@ img{
 .diary-notes{
   /*transform: translateY(-10px) rotate(-5deg); */
   box-shadow: 0 0 10px 8px gray;
-  background-color: #EAE7DC;
+  background-color: white;
   border-radius: 12px;
   height: 800px;
 }
+.normal-notes{
+  box-shadow: 0 0 10px 8px gray;
+  background-color: #EAE7DC;
+  border-radius: 12px;
+  height: 200px;
+}
 #display-cards div.card{
 	height: 450px;
+}
+.company-image{
+  background-size: cover;
+}
+.brand-logo{
+  box-shadow: 0px 0px 5px 3px deepskyblue;
+  animation: glow 1.5s linear infinite alternate;
+}
+@keyframes glow{
+  to {
+    box-shadow: 0px 0px 30px 15px #535FED;
+  }
 }
